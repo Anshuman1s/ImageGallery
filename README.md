@@ -1,8 +1,71 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Image Gallery
 
-Currently, two official plugins are available:
+A test application of an Image Gallery with basic operation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## API Reference
+
+#### Get all items
+
+**API: [https://7wnenbveal.execute-api.ap-south-1.amazonaws.com/dev/bucket](https://7wnenbveal.execute-api.ap-south-1.amazonaws.com/dev/bucket)**
+
+```http
+  GET /bucket
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Not Required**.          |
+
+#### Get item
+
+```http
+  GET /bucket/file?file_name={file.ext}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `file.ext`      | `string` | **Required**. File Name as query parameter |
+
+#### Delete item
+
+```http
+  DELETE /bucket/file?file_name={file.ext}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `file.ext`      | `string` | **Required**. File Name as query parameter |
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/xanderbilla/ImageGallery
+```
+
+Go to the project directory
+
+```bash
+  cd ImageGallery
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## Authors
+
+- [@xanderbilla](https://www.github.com/xanderbilla)
+
