@@ -7,7 +7,8 @@ import Gallery from "./Components/Gallery.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Uploader/>
-    <Gallery/>
+    {/* <App /> */}
+    <Uploader />
+    <Gallery />
   </React.StrictMode>
 );

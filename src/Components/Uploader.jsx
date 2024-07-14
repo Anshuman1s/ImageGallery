@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { uploadData } from 'aws-amplify/storage';
 import styles from "../styles/Uploader.module.css";
 
 function Uploader() {
@@ -14,15 +13,6 @@ const handleSubmit = async (event) => {
     event.preventDefault();
     if (selectedFile) {
         console.log("Uploading file:", selectedFile);
-        try {
-            const result = await uploadData({
-                key: selectedFile.name,
-                data: selectedFile
-            }).result;
-            console.log('Succeeded: ', result);
-        } catch (error) {
-            console.log('Error : ', error);
-        }
     } else {
         console.log("No file selected");
     }
