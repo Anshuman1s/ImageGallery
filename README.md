@@ -8,7 +8,7 @@ A test application of an Image Gallery with basic operation
 
 #### Get all items
 
-**API: [https://7wnenbveal.execute-api.ap-south-1.amazonaws.com/dev/bucket](https://7wnenbveal.execute-api.ap-south-1.amazonaws.com/dev)**
+**API: [https://7wnenbveal.execute-api.ap-south-1.amazonaws.com/dev](https://7wnenbveal.execute-api.ap-south-1.amazonaws.com/dev)**
 
 ```http
   GET /bucket
